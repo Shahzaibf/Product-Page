@@ -20,14 +20,14 @@ const NavBar = () => {
             <Link to={"/"}>Product Store</Link>
         </Text>
         <HStack spacing={2} alignItems={"center"}>
-            <Link to={"/create"}>
+            <Link to="/create">
                 <Button>
                     <CiSquarePlus fontSize={20}/>
                 </Button>
-                <Button onClick={toggleColorMode}>
-                    {colorMode === "light" ? <FaRegMoon /> : <FaRegSun />}
-                </Button>
-            </Link>
+             </Link>
+            <Button onClick={toggleColorMode}>
+                {colorMode === "light" ? <FaRegMoon /> : <FaRegSun />}
+            </Button>
         </HStack>
         </Flex>
     </Container>
